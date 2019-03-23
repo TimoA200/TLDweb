@@ -1,0 +1,25 @@
+.content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5em;
+}
+#content-box {
+  background-color: midnightblue;
+  border-radius: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+#title {
+  text-align: center;
+  font-size: 3em;
+  font-family: sans-serif;
+  color: aliceblue;
+}
+
+@media (max-width: 480px) {
+  #content-box {
+    padding: 0em 0em 0em 0em;
+  }
+}

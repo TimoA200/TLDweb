@@ -1,0 +1,10 @@
+nav {
+  display: flex;
+  background-color: darkgray;
+  border-radius: 0.2em;
+  justify-content: center;
+  box-shadow: 0.1em 0.1em gray;
+}
+img {
+  height: 3em;
+}
