@@ -1,0 +1,27 @@
+* {
+  color: red;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+p {
+  font-size: 50px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#content-box {
+  background-color: midnightblue;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}

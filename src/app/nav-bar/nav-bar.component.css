@@ -1,10 +1,26 @@
-nav {
+
+a {
   display: flex;
-  background-color: darkgray;
-  border-radius: 0.2em;
-  justify-content: center;
-  box-shadow: 0.1em 0.1em gray;
+  color: white;
+  outline: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: larger;
+  text-align: center;
 }
+
+.nav-bar-element {
+  height: 100%;
+  margin: 5px 10px 5px
+}
+
+#nav-bar {
+  display: flex;
+  background-color: midnightblue;
+  box-shadow: 2px 2px 2px midnightblue;
+  align-items: center;
+}
+
 img {
-  height: 3em;
+  height: 50px;
 }

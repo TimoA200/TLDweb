@@ -2,24 +2,24 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 5em;
+  margin-top: 100px;
 }
 #content-box {
   background-color: midnightblue;
-  border-radius: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-bottom: 1em;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 #title {
   text-align: center;
-  font-size: 3em;
+  font-size: 50px;
   font-family: sans-serif;
   color: aliceblue;
 }
 
 @media (max-width: 480px) {
   #content-box {
-    padding: 0em 0em 0em 0em;
+    padding: 0 0 0 0;
   }
 }
