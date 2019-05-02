@@ -1,15 +1,17 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import {catchError} from 'rxjs/operators';
-import {throwError} from 'rxjs';
+import { catchError } from 'rxjs/operators';
+import { throwError } from 'rxjs';
+import { Config } from './config';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BackendService {
-  private backendURL = 'http://192.168.178.43:3000';
+  private backendURL = (Config.debug ? 'http://192.168.178.43' : 'https://tld.hopto.org') + ':3000';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+  }
 
   test() {
     return this.http.post(this.backendURL + '/test', '', {
