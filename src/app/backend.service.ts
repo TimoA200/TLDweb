@@ -17,7 +17,7 @@ export class BackendService {
     const httpOptions = {
       withCredentials: true,
     };
-    return this.http.get(this.backendURL + url, httpOptions
+    return this.http.get('https://tld.hopto.org:3000' + url, httpOptions
     ).pipe(catchError(this.handleError));
   }
 
