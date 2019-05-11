@@ -14,9 +14,10 @@ export class SearchComponent implements OnInit {
   }
 
   test() {
-    this.backendService.test()
+    window.location.href = 'http://localhost:3000/auth/steam';
+    /*this.backendService.test()
       .subscribe(resp => {
         console.log(resp);
-      });
+      });*/
   }
 }

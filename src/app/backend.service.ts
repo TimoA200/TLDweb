@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 import { catchError } from 'rxjs/operators';
 import { throwError } from 'rxjs';
 import { Config } from './config';
@@ -13,10 +13,12 @@ export class BackendService {
   constructor(private http: HttpClient) {
   }
 
-  test() {
-    return this.http.post(this.backendURL + '/test', '', {
-      responseType: 'text'
-    }).pipe(catchError(this.handleError));
+  get(url: string) { // Example: /account
+    const httpOptions = {
+      withCredentials: true,
+    };
+    return this.http.get(this.backendURL + url, httpOptions
+    ).pipe(catchError(this.handleError));
   }
 
   private handleError(error: HttpErrorResponse) {

@@ -1,3 +1,3 @@
 export class Config {
-  public static debug = false;
+  public static debug = true;
 }

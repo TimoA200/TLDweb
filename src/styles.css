@@ -1,11 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 html {
   height: 100%;
-  background-image: url("/assets/images/background.jpg");
+  /*background-image: url("/assets/images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  overflow-x: hidden;
+  overflow-x: hidden;*/
+  background-color: #282828;
   scroll-behavior: smooth;
 }
 body {

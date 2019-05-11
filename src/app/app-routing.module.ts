@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {SearchComponent} from './search/search.component';
+import {AccountComponent} from './account/account.component';
 
 const appRoutes: Routes = [
   {
@@ -13,6 +14,10 @@ const appRoutes: Routes = [
   {
     path: 'search',
     component: SearchComponent
+  },
+  {
+    path: 'account',
+    component: AccountComponent
   },
   {
     path: '',

@@ -16,7 +16,6 @@ a {
 #nav-bar {
   display: flex;
   background-color: midnightblue;
-  box-shadow: 2px 2px 2px midnightblue;
   align-items: center;
 }
 
