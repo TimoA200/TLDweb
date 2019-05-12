@@ -8,7 +8,7 @@ import { Config } from './config';
   providedIn: 'root'
 })
 export class BackendService {
-  public backendURL = (Config.debug ? 'http://192.168.178.43' : 'https://clanbattleleague.com') + ':3000';
+  public backendURL = (Config.debug ? 'http://192.168.178.43' : 'https://tld.hopto.org') + ':3000';
 
   constructor(private http: HttpClient) {
   }
