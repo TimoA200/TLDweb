@@ -2,10 +2,8 @@
   <div class="nav-bar-element">
     <a routerLink="" routerLinkActive="true"><img alt="couldn't load image" src="/assets/images/Logo.png"></a>
   </div>
-  <div class="nav-bar-element">
-    <a routerLink="/search" routerLinkActive="true">Search</a>
-  </div>
-  <div class="nav-bar-element">
-    <a routerLink="/account" routerLinkActive="true">Account</a>
+  <div style="float: right" class="nav-bar-element">
+    <a *ngIf="accountService.name != null" routerLink="/account" routerLinkActive="true">Account</a>
+    <a *ngIf="accountService.name == null" (click)="signin()" routerLinkActive="true"><img alt="hmmmm" src="/assets/images/steam_signin.png" /></a>
   </div>
 </div>

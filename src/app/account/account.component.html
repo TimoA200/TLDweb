@@ -1,7 +1,7 @@
-<p>name: {{name}}</p>
-<img src="{{avatarSmall}}" alt="Couldn't load image" />
-<img src="{{avatarMedium}}" alt="Couldn't load image" />
-<img src="{{avatarLarge}}" alt="Couldn't load image" />
-<a href="{{profileUrl}}" target="_blank">Show on Steam</a>
+<p>name: {{accountService.name}}</p>
+<img src="{{accountService.avatarSmall}}" alt="Couldn't load image" />
+<img src="{{accountService.avatarMedium}}" alt="Couldn't load image" />
+<img src="{{accountService.avatarLarge}}" alt="Couldn't load image" />
+<a href="{{accountService.profileUrl}}" target="_blank">Show on Steam</a>
 <button (click)="logout()">Logout</button>
 
