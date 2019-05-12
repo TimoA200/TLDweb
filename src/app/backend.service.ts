@@ -8,7 +8,7 @@ import { Config } from './config';
   providedIn: 'root'
 })
 export class BackendService {
-  private backendURL = (Config.debug ? 'http://192.168.178.43' : 'https://tld.hopto.org') + ':3000';
+  public backendURL = (Config.debug ? 'http://192.168.178.43' : 'https://tld.hopto.org') + ':3000';
 
   constructor(private http: HttpClient) {
   }
@@ -17,7 +17,7 @@ export class BackendService {
     const httpOptions = {
       withCredentials: true,
     };
-    return this.http.get('https://tld.hopto.org:3000' + url, httpOptions
+    return this.http.get(this.backendURL + url, httpOptions
     ).pipe(catchError(this.handleError));
   }
 
